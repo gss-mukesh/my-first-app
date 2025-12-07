@@ -1,0 +1,112 @@
+
+<div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <h2>Registration Form </h2>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="row">
+        <div class="col-md-6">
+          
+                <div class="row">
+                  <div class="col-md-6">
+                    <span>Employee First Name </span>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text"   [(ngModel)]="emp1.empName" placeholder="Type first name here..."> 
+                  </div>
+                </div>
+                
+                </div> 
+                
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-md-3">
+                    <span>Employee Last Name </span>
+                  
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" [(ngModel)]="emp1.emplName" placeholder="Last name ...">
+                  </div>
+                </div>
+
+<div class="row" style="margin-top:20px;">
+                  <div class="col-md-3">
+                    <span> Gender </span>
+                  </div>
+                  <div class="col-md-6">
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                  </div>
+                </div>
+
+<div class="row" style="margin-top:20px;">
+                  <div class="col-md-3">
+                    <span> Hobbies </span>
+                  </div>
+                  <div class="col-md-1">
+                            <input type="checkbox" name="hobby" value="Reading"> Reading
+                         <input type="checkbox" name="hobby" value="Skill Gain"> Skill Gain
+                         <input type="checkbox" name="hobby" value="Music"> Music
+                  </div>
+                </div>
+               
+        <div class="row" style="margin-top:20px;">
+                  <div class="col-md-3">
+                    <span> Date of Joining </span>
+                    </div>
+                    <div class="col-md-2">
+                      <input type="date" [(ngModel)]="emp1.empdoj" name="birthdate">
+                            
+                  </div>
+                </div>
+
+<div class="row" style="margin-top:20px;">
+                  <div class="col">
+                    
+                      <input type="submit" name="submit">
+                            
+                  </div>
+                </div>
+        
+<div class="row" style="margin-top:20px;">
+                  <div class="col-md-2">
+                    
+                      <input type="reset" name="reset">
+                            
+                  </div>
+                </div>
+                
+
+
+<div class="row" style="margin-top:20px;">
+                  <div class="col">
+                    <h3> Preview</h3>
+                    
+                     
+                     <span> Employee Full Name= {{getFullName()}} </span></div>
+                     <span> Employee Date of Joining= {{emp1.empdoj}}</span>
+                     
+
+                            
+                  </div>
+                </div>
+    </div>
+
+
+    <app-emp-preview [emp1]="emp1"></app-emp-preview>
+              
+               
+              
+
+
+
+
+        
+    
+  
+    
+  
+
+
